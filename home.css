@@ -1,0 +1,888 @@
+body
+{
+   overflow-x: hidden;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #f5f5f5;
+   color: #333;
+}
+header h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+nav
+{
+    text-align: center;
+}
+
+nav a 
+{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover 
+{
+    background-color:rgba(245, 242, 242, 0.364) ;
+}
+
+
+/* common */
+
+/* top bar start */
+.top
+{
+    background-color:rgb(58, 55, 55);
+    padding:6px 6px 6px 6px;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: +1;
+}
+
+/* top bar end */
+/* nav bar start */
+.bar
+{
+    position: sticky;
+    top:100px;
+    bottom: 30px;
+    z-index: +1;
+    background-color: white;
+}
+.option
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.butt
+{
+    border:black;
+    border-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.button1
+{
+    background-color: white;
+    color: black;
+}
+.button1:hover
+{
+    background-color:rgb(58, 55, 55);
+    color: azure;
+}
+/* nav bar end */
+/* banner start */
+.banner
+{
+    backface-visibility: hidden;
+}
+.heading
+{
+    font-size: 60px;
+    font-weight:600;
+    margin-bottom: 100px;
+}
+.para
+{
+    font-size:30px;
+    font-weight:600;
+    margin-bottom: 70px;
+   
+}
+/* .para1
+{
+    font-size:60px;
+    font-weight:bolder;
+    margin-bottom:100px;
+    margin-top:270px;
+    margin-left:10px;
+    margin-right:350px;
+} */
+.banner
+{
+    position: relative;
+}
+.banner img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.overlay 
+{
+    
+    margin-top:-100px;
+    /* bottom:500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 160, 159, 0.3); 
+    display: flex; */
+}
+.now
+{
+    /* background-color: rgb(17, 122, 17); */
+    padding: 20px 20px 25px 25px;
+    color:black;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+}
+/* .now:hover
+{
+    background-color: green;
+} */
+.givebtn:hover
+{
+    background-color: green;
+    color:black;
+}
+.symbol
+{
+    padding: 20px 20px 25px 25px;
+}
+/* banner end */
+/* services start */
+.heart
+{
+    font-size:20px;
+    margin-top:30px;
+    color:green;
+}
+.services
+{
+    color:rgb(8, 65, 38);
+    font-weight:bold;
+    font-size:30px;
+    margin-left:60px;
+    margin-top:-40px;
+}
+.services1
+{
+    color:rgb(8, 65, 38);
+    font-weight:bold;
+    font-size:30px;
+    margin-left:60px;
+    margin-top:-40px;
+}
+.ser
+{
+    color:grey;
+    margin-top:10px;
+}
+.ser1
+{
+    color:grey;
+    margin-top:10px;
+}
+.bar
+{
+    /* box-shadow:25px 30px 30px 0px lightgrey; */
+    bottom:30px;
+}
+.serv
+{
+    margin-top:-100px;
+    position:relative;
+    background-color: white;
+}
+/* services end */
+/* about start */
+.about
+{
+    border-radius:5px;
+    margin-top:50px;
+}
+.abouts
+{
+    z-index: -1;
+}
+.abrow
+{
+    text-align: justify;
+}
+.heads
+{
+    /* font-size:50px; */
+    font-weight:bold;
+    color:rgb(235, 43, 43);
+}
+.iname
+{
+    color:rgb(197, 15, 15);
+    margin-top:80px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+.apara
+{
+    font-size:20px;
+    color:black;
+}
+.ipara
+{
+    font-size:20px;
+    color:black;
+}
+.b1
+{
+    width: 200px;
+    text-align: justify; 
+    padding: 10px;
+    word-wrap: break-word;
+    margin-left:15px;
+}
+.know
+{
+   background-color: rgb(17, 122, 17);
+   padding: 20px 20px 25px 25px;
+   font-size:20px;
+   font-weight:bold;
+   color:black;
+}
+
+.abpara
+{
+    margin-left:100px;
+    margin-right:100px;
+    text-align: justify;
+}
+.awa
+{
+    font-size:50px;
+    margin-top:30px;
+    color:green;
+    margin-left:25px;
+}
+.third
+{
+    margin-left:50px;
+}
+.nams
+{
+    color:rgb(8, 65, 38);
+    margin-left:25px;
+}
+/* about end */
+/* counting start */
+.count
+{
+    position: relative;
+}
+.count img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.cimg
+{
+    border: black;
+}
+.ill_img
+{
+    margin-left:-120px;
+}
+.i_img
+{
+    margin-left:-120px;
+}
+.i_img1
+{
+    margin-left:-50px;
+}.i_img2
+{
+    margin-left:-100px;
+}
+.i_img3
+{
+    margin-left:-90px;
+}
+.spara
+{
+    font-weight: bolder;
+    color:black;
+    margin-left:20px;
+}
+.fpara
+{
+    font-weight: bolder;
+    color:rgb(197, 15, 15);
+}
+.over 
+{
+    left: 0;
+    top:0;
+    bottom:500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 226, 160, 0.425); 
+    /* background-color: rgba(177, 230, 203, 0.4);  */
+    display: flex;
+    color: rgb(45, 58, 45);
+}
+.counts
+{
+    font-size:60px;
+    font-weight:bolder;
+    margin-left:50px;
+    color:white;
+    filter: brightness(100%);
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.cnt
+{
+    margin-left:40px;
+    font-weight:500;
+    color:white;
+    filter: brightness(100%);
+}
+.plus
+{
+    font-weight:bold;
+}
+/* counting end */
+/* why choose start */
+.us
+{
+    font-size:20px;
+    color:rgb(17, 122, 17);
+    font-weight:bold;
+}
+.check
+{
+    font-size:50px;
+    margin-left:110px;
+    font-weight:bolder;
+    margin-top:20px;
+    color:green;
+    background-color: rgba(211, 211, 211, 0.397);
+}
+.names
+{
+    color:rgb(8, 65, 38);
+    margin-left:60px;
+    margin-top:40px;
+    font-weight:bolder;
+}
+.names1
+{
+    color:rgb(8, 65, 38);
+    margin-left:75px;
+    margin-top:40px;
+    font-weight:bolder;
+}
+.names2
+{
+    color:rgb(8, 65, 38);
+    margin-left:87px;
+    margin-top:40px;
+    font-weight:bolder;
+}
+.box
+{
+    box-shadow: 20px 20px 20px 0px lightgrey;
+    margin-right:-40px;
+    padding-left:-40px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.box1
+{
+    box-shadow: 20px 20px 20px 0px lightgrey;
+    margin-right:-40px;
+    padding-left:-40px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.box2
+{
+    box-shadow: 20px 20px 20px 0px lightgrey;
+    margin-right:-40px;
+    padding-left:-40px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.boxes
+{
+    margin-top:100px;
+}
+.wchoose
+{
+    width: 550px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+.users
+{
+    font-size:50px;
+    margin-left:100px;
+    font-weight:bolder;
+    margin-top:20px;
+    color:green;
+    background-color: rgba(211, 211, 211, 0.397);
+}
+.reply
+{
+    font-size:50px;
+    margin-left:100px;
+    font-weight:bolder;
+    margin-top:20px;
+    color:green;
+    background-color: rgba(211, 211, 211, 0.397);
+}
+/* why choose end */
+/* bell start */
+.bbell
+{
+    background-color: rgb(8, 65, 38);
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.bell
+{
+    font-size:80px;
+    margin-left:50px;
+    margin-top:70px;
+    color:white;
+}
+.bhead
+{
+    font-size:45px;
+    font-weight:bolder;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.order
+{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+}
+.bnow
+{
+    background-color: white;
+    color:black;
+    padding: 15px 15px 20px 20px;
+    font-size:17px;
+    font-weight:bold;
+    margin-top:20px;
+    margin-top:70px;
+    margin-left:30px;
+}
+/* bell end */
+/* 2nd services start */
+.shead
+{
+    font-size:40px;
+    font-weight:bolder;
+    color:rgb(8, 65, 38);
+}
+.us
+{
+    font-size:20px;
+    color:rgb(17, 122, 17);
+    font-weight:bold;
+}
+.shead1
+{
+    font-size:40px;
+    font-weight:bolder;
+    color:rgb(8, 65, 38);
+    margin-top:-27px;
+}
+.icons
+{
+    margin-top:40px;
+    margin-left:130px;
+}
+.wch
+{
+    width: 270px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    margin-left:25px;
+}
+.cards
+{
+    box-shadow: 0px 10px 20px 10px lightgrey;
+}
+.sna
+{
+    color:rgb(8, 65, 38);
+    margin-left:38px;
+    margin-top:35px;
+    font-weight:bolder;
+}
+.sna1
+{
+    color:rgb(8, 65, 38);
+    margin-left:80px;
+    margin-top:35px;
+    font-weight:bolder;
+}
+.sym
+{
+    margin-left:150px;
+    font-weight:bolder;
+    color:rgb(8, 65, 38);
+}
+.syms
+{
+    border:1px solid lightgrey;
+    background-color: rgb(209, 227, 245);
+    padding:5px 5px 5px 5px;
+    border-radius:5px;
+}
+.now1
+{
+    background-color: rgb(17, 122, 17);
+    padding: 20px 20px 25px 25px;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+    margin-left:470px;
+    color:white;
+}
+.sernow
+{
+    color:white;
+    text-decoration: none;
+}
+.now1:hover
+{
+    background-color: rgb(17, 122, 17);
+    color:black;
+}
+.hero-section
+{
+    position: relative;
+    display: flex;
+    color: white;
+    overflow: hidden;
+}
+.hero-bg 
+{
+      
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('uyirimage/serbackground1.webp'); 
+    background-size: auto;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.hero-bg1 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('uyirimage/service2background.webp'); 
+    background-size: auto;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.hero-bg2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('uyirimage/service3background.webp'); 
+    background-size: auto;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.apara
+{
+    font-size:17px;
+    color:rgba(94, 91, 91, 0.952);
+}
+.hero-section:hover .hero-bg
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .hero-bg1 
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .hero-bg2
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .icons
+{
+    background-color: white;
+    padding:5px 5px 5px 5px;
+}
+.hero-section:hover .apara
+{
+    color: white;
+}
+.hero-section:hover .sna
+{
+    color: white;
+}
+.hero-section:hover .sna1
+{
+    color: white;
+}
+.hero-content 
+{
+    position: relative;
+    z-index: 1;
+}
+/* 2nd services end */
+/* form start */
+/* .body
+{
+  margin-left:350px;
+  margin-top:100px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:630px;
+  height:520px;
+  border-radius:5px;
+} */
+.over 
+{
+    left: 0;
+    top:0;
+    bottom:500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 226, 160, 0.425); 
+    /* background-color: rgba(177, 230, 203, 0.4);  */
+    display: flex;
+    color: rgb(45, 58, 45);
+}
+.mak
+{
+  color: #134d2a;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.text
+{
+  display: flex;
+  gap: 15px;
+}
+.text input
+{
+  flex: 1;
+}
+/* input, textarea
+{
+  padding: 15px;
+  border: none;
+  background-color: #e9f7ec;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+} */
+/* textarea
+{
+  resize: vertical;
+  min-height: 100px;
+} */
+.sernow
+{
+    color: black;
+}
+.btn1
+{
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight:400;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  width: 150px;
+  align-self:last baseline;
+}
+/* .btn1:hover
+{
+  background-color: #256e33;
+} */
+/* form end */
+/* test start */
+.wtest
+{
+    width: 450px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+.givebtn
+{
+    background-color: rgb(17, 122, 17);
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+.testu
+{
+    font-size:100px;
+    color:rgb(8, 65, 38);
+    margin-left:0px;
+    margin-top:-40px;
+}
+.userpre
+{
+    margin-top:380px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    margin-left:150px;
+    background-color:black;
+    border-radius:5px;
+}
+.usernex
+{
+    margin-top:380px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    margin-right:400px;
+    background-color:black;
+    border-radius:5px;
+}
+.usertest
+{
+    font-size:23px;
+    width:500px;
+    margin-top:30px;
+    margin-left:10px; 
+    color:rgba(94, 91, 91, 0.952); 
+}
+.tname
+{
+    font-size:20px;
+    color:rgb(8, 65, 38);
+    margin-top:20px;
+    font-weight:bold;
+    margin-left:10px; 
+}
+.testslide
+{
+    margin-top:70px;
+    margin-left:190px;
+}
+.apara
+{
+    font-size:17px;
+    color:rgba(94, 91, 91, 0.952);
+}
+.us
+{
+    font-size:20px;
+    color:rgb(17, 122, 17);
+    font-weight:bold;
+}
+.heads
+{
+    font-size:50px;
+    font-weight:bolder;
+    color:rgb(8, 65, 38);
+}
+/* test end */
+/* footer start */
+
+ .footer
+{
+    background-color: black;
+}
+.foot1
+{
+    text-align: center;
+}
+form
+{
+    margin: 90px 150px 90px 150px;
+}
+.last
+{
+    margin-left: 70px;
+}
+.underline-input 
+{
+     border: none;              
+     border-bottom: 2px solid #000;
+     outline: none;             
+     font-size: 16px;
+     box-shadow: none;
+     background: transparent;
+     width: 500px;
+}
+.underline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.underline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+}
+.phone-code
+{
+    width: 114px;
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none; 
+    box-shadow: none;
+    background: transparent;
+}
+.button2
+{
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 200px;
+    height: 40px;
+}
+.button2:hover
+{
+    background-color: rgb(74, 137, 179);
+}
+/* footer end */

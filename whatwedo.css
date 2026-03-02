@@ -1,0 +1,419 @@
+/* common */
+.app
+{
+    position: fixed;
+    bottom:70px;
+    right:0px;
+    font-size: 40px;
+    color:azure;
+    background-color:#32CD32;
+    z-index: 1;
+}
+body
+{
+   overflow-x: hidden;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #f5f5f5;
+   color: #333;
+}
+header h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+nav
+{
+    text-align: center;
+}
+
+nav a 
+{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover 
+{
+    background-color:rgba(245, 242, 242, 0.364) ;
+}
+
+/* top bar start */
+.top
+{
+    background-color:rgb(58, 55, 55);
+    padding:6px 20px 6px 20px;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: +1;
+}
+/* top bar end */
+/* nav bar start */
+.bar
+{
+    z-index: 1;
+    position:sticky;
+    top:110px;
+    bottom:30px;
+    background-color: white;
+}
+.option
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.butt
+{
+    border:black;
+    border-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.button1
+{
+    background-color: white;
+    color: black;
+}
+.button1:hover
+{
+    background-color:rgb(58, 55, 55);
+    color: azure;
+}
+/* nav bar end */
+/* banner start */
+
+.banner1
+{
+    width: 800px;
+    height: 600px;
+    margin-left: 170px;
+    border:solid beige 15px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 0px gray;
+}
+.para
+{
+    font-size:60px;
+    font-weight:bolder;
+    margin-top:140px;
+    margin-left:430px;
+    margin-right:380px;
+}
+.para1
+{
+    font-size:60px;
+    font-weight:bolder;
+    margin-top:240px;
+    margin-left:400px;
+    margin-right:350px;
+}
+.para2
+{
+    font-size:60px;
+    font-weight:bolder;
+    margin-top:70px;
+    margin-left:380px;
+    margin-right:350px;
+}
+.banner
+{
+    position: relative;
+}
+.banner img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: brightness(60%); */
+}
+.overlay 
+{
+    left: 0;
+    top:0;
+    bottom:500px;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(177, 230, 203, 0.4);  */
+    display: flex;
+    color: rgb(45, 58, 45);
+}
+.now
+{
+    background-color: rgb(17, 122, 17);
+    padding: 20px 20px 25px 25px;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+}
+.symbol
+{
+    background-color:rgb(0, 128, 75);
+    padding: 20px 20px 25px 25px;
+}
+ ul.breadcrumb 
+{
+  padding: 30px 20px;
+  margin-left:170px;
+}
+ul.breadcrumb li
+{
+  display: inline;
+  font-size: 20px;
+}
+ul.breadcrumb li+li:before
+{
+  padding: 8px;
+  color:white;
+  content: "/\00a0";
+}
+ul.breadcrumb li a
+{
+  color:white;
+  text-decoration: none;
+}
+/* banner end */
+
+/* blog start */
+.tblog
+{
+    color:rgb(197, 15, 15);
+    font-style: italic;
+    font-weight: bold;
+}
+.shadow 
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* .imgs 
+{
+} */
+.pblog
+{
+    color:rgba(94, 91, 91, 0.952);
+
+}
+.blog
+{
+   width: 200px;
+   height: 200px;
+   object-fit:fill; 
+   margin-left: 50px;
+}
+.blog1
+{
+    width: 300px;
+    margin-top: 50px;
+}
+.cfblog
+{
+    background-color: white;
+}
+.shead1
+{
+    font-size:19px;
+    text-align: justify;
+    color:white;
+    margin-right: 50px;
+}
+.shead
+{
+    font-size:20px;
+    text-align: justify;
+    color:black;
+}
+.vijay{
+    height:110px ;
+    margin-top:-60px;
+    
+}
+.edit{
+    padding-top: 30px;
+}
+
+
+.our{
+    color:rgb(197, 15, 15);
+    font-size: 30px;
+    font-weight: bold;
+}
+/* blog end */
+/* test start */
+.wtest
+{
+    width: 450px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+.givebtn
+{
+    background-color: rgb(17, 122, 17);
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+.testu
+{
+    font-size:100px;
+    color:rgb(8, 65, 38);
+    margin-left:0px;
+    margin-top:-40px;
+}
+.userpre
+{
+    margin-top:450px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    margin-left:150px;
+    border-radius:5px;
+    background: transparent;
+}
+.usernex
+{
+    margin-top:450px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    margin-right:700px;
+    background-color:black;
+    border-radius:5px;
+        background: transparent;
+        right:0;
+
+}
+.usertest
+{
+    font-size:15px;
+    width:500px;
+    margin-top:30px;
+    margin-left:40px; 
+    color:rgba(94, 91, 91, 0.952); 
+    width: 800px;
+}
+.tname
+{
+    font-size:20px;
+    color:black;
+    margin-bottom:50px;
+    font-weight:bold;
+    margin-left:10px; 
+}
+.testslide
+{
+    margin-top:70px;
+    margin-left:300px;
+}
+.testbtn
+{
+    z-index: +1;
+}
+.apara
+{
+    font-size:17px;
+    color:rgba(94, 91, 91, 0.952);
+}
+.us
+{
+    font-size:30px;
+    color:rgb(197, 15, 15);
+    font-weight:bold;
+}
+.heads
+{
+    font-size:50px;
+    font-weight:bolder;
+    color:rgb(8, 65, 38);
+}
+.givebtn:hover
+{
+    background-color: green;
+    color:black;
+}
+.sernow
+{
+    color:black;
+    text-decoration: none;
+}
+/* test end */
+/* footer start */
+.footer
+{
+    background-color: black;
+}
+.foot1
+{
+    text-align: center;
+}
+form
+{
+    margin: 90px 150px 90px 150px;
+}
+.last
+{
+    margin-left: 70px;
+}
+.underline-input 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  width: 500px;
+}
+.underline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.underline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+}
+.phone-code
+{
+    width: 114px;
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none; 
+    box-shadow: none;
+    background: transparent;
+}
+.button2
+{
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 200px;
+    height: 40px;
+}
+.button2:hover
+{
+    background-color: rgb(74, 137, 179);
+}
+/* footer end */

@@ -1,0 +1,304 @@
+/* common */
+body
+{
+   overflow-x: hidden;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #f5f5f5;
+   color: #333;
+}
+header h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+nav
+{
+    text-align: center;
+}
+
+nav a 
+{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover 
+{
+    background-color:rgba(245, 242, 242, 0.364) ;
+}
+
+.app
+{
+    position: fixed;
+    bottom:70px;
+    right:0px;
+    font-size: 40px;
+    color:azure;
+    background-color:#32CD32;
+    z-index: 1;
+}
+/* top bar start */
+.top
+{
+    background-color:rgb(58, 55, 55);
+    padding:6px 20px 6px 20px;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: +1;
+}
+/* top bar end */
+/* nav bar start */
+.bar
+{
+    z-index: 1;
+    position:sticky;
+    top:110px;
+    bottom:30px;
+    background-color: white;
+}
+.option
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.butt
+{
+    border:black;
+    border-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.button1
+{
+    background-color: white;
+    color: black;
+}
+.button1:hover
+{
+    background-color:rgb(58, 55, 55);
+    color: azure;
+}
+/* nav bar end */
+/* ov start */
+.ourv{
+    color: rgb(197, 15, 15);
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+
+}
+.ovpara{
+    font-size: 20px;
+    color: rgb(41, 38, 38);
+    text-align: justify;
+    margin-left: 60px;
+    
+}
+.ovimg{
+    margin-left: 330px;
+    border:solid beige 10px;
+    box-shadow: 0px 0px 20px 0px #333;
+    width: 700px;
+}
+/* ov end */
+
+/* banner start */
+.banner
+{
+    backface-visibility: hidden;
+}
+
+/* banner end */
+
+/* our mission start */
+.omsection{
+        background-color: rgb(253, 235, 213);
+        padding-top: 20px;
+     }
+.ombody{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color:rgb(233, 248, 227);
+
+    display:flex;
+    justify-content: center;
+     border-style: solid;
+  border-color: rgb(76, 84, 105);
+  border-width: 5px;
+
+}
+.omicon{
+    font-size: 100px;
+    color: rgb(77, 110, 85);
+    padding: 30px 40px 30px 40px;
+    padding-bottom: 10px;
+}
+.cfootpara{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(27, 8, 56);
+}
+.mission
+{
+    width: 330px;
+    height: 250px;
+}
+/* om end */
+/* 4year start */
+.yearsection{
+    margin-top: 20px;
+}
+.fourheading{
+    color:rgb(197, 15, 15);
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 30px;
+
+}
+.fourpara{
+    
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+.fourimg{
+    margin-top: 120px;
+    margin-left: 30px;
+    border-radius: 20px;
+    height: 300px;
+}
+/* 4 year end */
+/* who we are banner start */
+.wwareimg{
+    margin-top: 50px;
+    
+}
+.wwarecontainer{
+     position: relative;
+     margin: 0 auto;
+     display: block;
+    width: 100;
+}
+.wwarecontent{
+position: absolute;
+  margin-right: 15px;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  padding: 88px;
+
+ 
+}
+.wwheading{
+    text-align: center;
+    padding-bottom: 10px;
+    color: beige;
+    font-size: 30px;
+}
+.wwpara{
+    line-height: 25px;
+    font-size: 20px;
+}
+/* who we are banner end */
+/*  scroll gallery start*/
+.scgsection{
+margin-top: 110px;
+padding-bottom: 80px;
+}
+.scgheading{
+ text-align: center;
+  color: rgb(197, 15, 15);
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+.scroll-container {
+  background-color:rgba(218, 173, 173, 0.3);
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-container img {
+  padding: 5px;
+}
+/* scroll gallery ends */
+
+/* footer start */
+.footer
+{
+    background-color: black;
+}
+.foot1
+{
+    text-align: center;
+}
+form
+{
+    margin: 90px 150px 90px 150px;
+}
+.last
+{
+    margin-left: 70px;
+}
+.underline-input 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  width: 500px;
+}
+.underline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.underline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+}
+.phone-code
+{
+    width: 114px;
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none; 
+    box-shadow: none;
+    background: transparent;
+}
+.button2
+{
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 200px;
+    height: 40px;
+}
+.button2:hover
+{
+    background-color: rgb(74, 137, 179);
+}
+/* footer end */

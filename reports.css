@@ -1,0 +1,317 @@
+/* common */
+body
+{
+   overflow-x: hidden;
+   font-family: 'Times New Roman', Times, serif;
+}
+header h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+nav
+{
+    text-align: center;
+}
+
+nav a 
+{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover 
+{
+    background-color:rgba(245, 242, 242, 0.364) ;
+}
+
+.app
+{
+    position: fixed;
+    bottom:70px;
+    right:0px;
+    font-size: 40px;
+    color:azure;
+    background-color:#32CD32;
+    z-index: 1;
+}
+/* top bar start */
+.top
+{
+    background-color:rgb(58, 55, 55);
+    padding:6px 20px 6px 20px;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: +1;
+}
+/* top bar end */
+/* nav bar start */
+.bar
+{
+    z-index: 1;
+    position:sticky;
+    top:110px;
+    bottom:30px;
+    background-color: white;
+}
+.option
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.butt
+{
+    border:black;
+    border-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.button1
+{
+    background-color: white;
+    color: black;
+}
+.button1:hover
+{
+    background-color:rgb(58, 55, 55);
+    color: azure;
+}
+/* nav bar end */
+/* content section start */
+.content
+{
+    background-color: #faebdd;
+    padding: 40px;
+}
+.heading
+{
+    
+    font-weight:bolder;
+    text-align: center;
+    color:rgb(197, 15, 15);
+}
+.para
+{
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align:justify;
+}
+/* content section end */
+/* banner start */
+.banner
+{
+    background-color: #faebdd;
+}
+.banner-img
+{
+    margin: 0px 200px 0px 200px;
+}
+/* banner end */
+/* document start */
+.doc-bg
+{
+    background-color: white;
+}
+.document
+{
+    font-weight: bolder;
+    color:rgb(197, 15, 15);
+    margin-left: 200px;
+}
+.card
+{
+    margin-left: 200px;
+    width: 270px;
+    height: 350px;
+    border: 5px solid rgb(185, 184, 184);
+    box-shadow: 0px 10px 20px 0px rgb(10, 10, 10);
+}
+.card-body
+{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.card-body img
+{
+    transition:transform 0.3s ease;
+}
+.card-body:hover img
+{
+    transform: scale(1.2);
+}
+.card-footer
+{
+    background-color: rgb(92, 79, 57);
+    color: #faebdd;
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+.title
+{
+    font-weight:bolder;
+    text-align: left;
+    color: rgb(197, 15, 15);
+    margin-top: 100px;
+}
+.subtitle
+{
+    text-align: left;
+    color:  rgb(197, 15, 15);
+    font-size:30px;
+}
+.button3
+{
+    background-color: rgb(197, 15, 15);
+    color: white;
+    font-size: larger;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    font-weight: bold;
+    height: 40px;
+    width: 190px;
+    border-color:rgb(197, 15, 15) ;
+}
+.button3:hover
+{
+    background-color: rgb(85, 126, 85);
+}
+.card1
+{
+    margin-left: 50px;
+    width: 270px;
+    height: 350px;
+    border: 5px solid rgb(185, 184, 184);
+    box-shadow: 0px 10px 20px 0px rgb(10, 10, 10);
+}
+.card-body1
+{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 10px;
+}
+.card-body1 img
+{
+    transition:transform 0.3s ease;
+    margin-left: 15px;
+}
+.card-body1:hover img
+{
+    transform: scale(1.2);
+}
+.card-footer1
+{
+    background-color: rgb(92, 79, 57);
+    color: #faebdd;
+    margin-right: 5px;
+    margin-left: 10px;
+    width: 250px;
+} 
+.title1
+{
+    font-weight:bolder;
+    text-align: right;
+    color: rgb(197, 15, 15);
+    margin-top: 100px;
+    letter-spacing: -4;
+}
+.subtitle1
+{
+    font-style: italic;
+    text-align: right;
+    color:  rgb(197, 15, 15);
+    font-size:30px;
+}
+.button4
+{
+    background-color:rgb(197, 15, 15);
+    color: white;
+    font-size: larger;
+    letter-spacing: 3px;
+    margin-left: 550px;
+    font-weight: bold;
+    height: 40px;
+    width: 190px;
+    border-color:rgb(197, 15, 15) ;
+}
+.button4:hover
+{
+    background-color: rgb(85, 126, 85);
+}
+/* document end */
+/* footer start */
+.footer
+{
+    background-color: black;
+}
+.foot1
+{
+    text-align: center;
+}
+form
+{
+    margin: 90px 150px 90px 150px;
+}
+.last
+{
+    margin-left: 70px;
+}
+.underline-input 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  width: 500px;
+}
+.underline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.underline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+}
+.phone-code
+{
+    width: 114px;
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none; 
+    box-shadow: none;
+    background: transparent;
+}
+.button2
+{
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 200px;
+    height: 40px;
+}
+.button2:hover
+{
+    background-color: rgb(74, 137, 179);
+}
+/* footer end */

@@ -1,0 +1,282 @@
+body
+{
+   overflow-x: hidden;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #f5f5f5;
+   color: #333;
+}
+header h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+nav
+{
+    text-align: center;
+}
+
+nav a 
+{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover 
+{
+    background-color:rgba(245, 242, 242, 0.364) ;
+}
+
+.app
+{
+    position: fixed;
+    bottom:70px;
+    right:0px;
+    font-size: 40px;
+    color:azure;
+    background-color:#32CD32;
+    z-index: 1;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formunderline-input::placeholder {
+  color: beige;
+  opacity: 1;
+}
+/* top bar start */
+.top
+{
+    background-color:rgb(58, 55, 55);
+    padding:6px 20px 6px 20px;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: +1;
+}
+/* top bar end */
+/* nav bar start */
+.bar
+{
+    z-index: 1;
+    position:sticky;
+    top:110px;
+    bottom:30px;
+    background-color: white;
+}
+.option
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.butt
+{
+    border:black;
+    border-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.button1
+{
+    background-color: white;
+    color: black;
+}
+.button1:hover
+{
+    background-color:rgb(58, 55, 55);
+    color: azure;
+}
+/* nav bar end */
+
+
+/* content start */
+.banner
+{
+    background-color:#faebdd ;
+}
+.container
+{
+    background-color: white;
+    width: 950px;
+}
+.heading
+{
+    
+    font-weight:bolder;
+    text-align: center;
+    background-color: white;
+    letter-spacing: -3px;
+}
+.para
+{
+    margin-left: 170px;
+    margin-right: 160px;
+    margin-top: 50px;
+    word-spacing: 3px;
+    text-align:justify;
+}
+/* content end */
+/* form start */
+.formbg
+{
+    background-color: #3a7a56;
+    width: 600px;
+}
+.formtitle
+{
+    font-weight:bolder;
+    /* text-align: center; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -3px;
+    color: beige;
+}
+.formpara
+{
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 3px;
+    text-align:justify;
+    color: beige;
+}
+.formpara1
+{
+    margin-left: 70px;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 3px;
+    text-align:justify;
+    color: beige;
+}
+.formunderline-input 
+{
+  border: none;              
+  border-bottom: 2px solid beige;
+  color: beige;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  width: 500px;
+}
+.formunderline-input option {
+  color:#3a7a56 ;
+  background:beige;
+}
+.formunderline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid beige;
+  color: beige;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.formunderline-input1 option {
+  color:#3a7a56 ;
+  background:beige;
+}
+.formunderline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid beige;
+  color: beige;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+}
+
+.dbutton
+{
+  border: 2px solid beige;
+  color: beige;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+  width: 450px;
+  height: 50px;
+}
+.dbutton:hover
+{
+    background-color: beige;
+    color:#3a7a56;
+}
+/* form end */
+/* footer start */
+.footer
+{
+    background-color: black;
+}
+.foot1
+{
+    text-align: center;
+}
+form
+{
+    margin: 90px 150px 90px 150px;
+}
+.last
+{
+    margin-left: 70px;
+}
+.underline-input 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  width: 500px;
+}
+.underline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.underline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 70px;
+}
+.phone-code
+{
+    width: 114px;
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none; 
+    box-shadow: none;
+    background: transparent;
+}
+.button2
+{
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 200px;
+    height: 40px;
+}
+.button2:hover
+{
+    background-color: rgb(74, 137, 179);
+}
+/* footer end */
