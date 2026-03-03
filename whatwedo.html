@@ -36,7 +36,7 @@
 <!-- nav bar start -->
      <section class="bar">
         <nav class="navbar navbar-expand-sm ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,18 +55,16 @@
                   <a class="nav-link mx-3" href="whatwedo.html">WHAT WE DO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3 " href="">GET INVOLVED</a>
+                  <a class="nav-link mx-3 " href="#" aria-disabled="true">GET INVOLVED</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mx-3 " href="reports.html">REPORTS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="">OUR TEAM</a>
+                  <a class="nav-link mx-3" href="#" aria-disabled="true">OUR TEAM</a>
                 </li>
                 <li class="butt" >
-                 <button class="button1">
-                  <a class="nav-link button1" href="donation.html"> DONATE<i class=" mx-2 fas fa-arrow-right"></i></a>
-                 </button>
+                 <a class="nav-link button1" href="donation.html">DONATE<i class="mx-2 fas fa-arrow-right"></i></a>
                 </li>
                 </div>
               </ul><hr>
@@ -256,15 +254,15 @@
       <h1 class="mx-5 text-light">Get in Touch</h1>
       <p class="m-5 text-light"> Bama Nagar 1st St, Vanitha Nagar, Bank <br>Colony, Madurai, Tamil Nadu :- 625017</p>
       <p class="m-5 text-light center">+919789268870<br>ilakku.mdu@gmail.com</p>
-      <a href=""><i class="fab fa-facebook text-light p-2 foticon h4"></i></a>
-      <a href=""><i class="fab fa-youtube text-light p-2 h4"></i></a>
-      <a href=""><i class="fab fa-linkedin text-light p-2 h4"></i></a>
-      <a href=""><i class="fab fa-instagram text-light p-2 h4"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook text-light p-2 foticon h4"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube text-light p-2 h4"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin text-light p-2 h4"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram text-light p-2 h4"></i></a>
     </div>
     <div class="col-md-8">
-      <form class="bg-light" onsubmit="return validatesub()"><br>
-        <h5><center><b>SUBSCRIBE US</b></center></h5>
-        <p><center>Get our emails to stay in the know. </center></p>
+      <form id="subscribeForm" class="bg-light" method="post" action="/api/subscribe" onsubmit="return validateAndSubmitSubscribe(event)"><br>
+        <h5 class="text-center"><b>SUBSCRIBE US</b></h5>
+        <p class="text-center">Get our emails to stay in the know.</p>
         <table>
           <tr>
             <td><p class="mx-5">First name:</p></td>
@@ -272,15 +270,15 @@
           </tr>
           <tr>
             <td>
-              <input type="text" id="fname" title="First name" placeholder="First Name" class="underline-input1 mx-5">
+              <input type="text" id="fname" name="firstName" title="First name" placeholder="First Name" class="underline-input1 mx-5">
             </td>
             <td>
-              <input type="text" id="lname" title="Last name" placeholder="Last Name" class="underline-input2 ">
+              <input type="text" id="lname" name="lastName" title="Last name" placeholder="Last Name" class="underline-input2 ">
             </td>
           </tr>
         </table><br>
         <p class="mx-5">Email:</p>
-        <input type="text" id="email" title="Email" placeholder="Enter the Email ID" class="underline-input mx-5 " required ><br><br>
+        <input type="email" id="email" name="email" title="Email" placeholder="Enter the Email ID" class="underline-input mx-5 " required ><br><br>
         <span id="errorsub" style="color:red;" class="mx-5"></span>
         <p class="mx-5">Phone :</p>
         <div class="mx-5">
@@ -296,11 +294,9 @@
           <option value="+86">🇨🇳 +86 (China)</option>
           <option value="+971">🇦🇪 +971 (UAE)</option>
          </select>
-         <input type="tel"name="phone"placeholder="Enter phone number"pattern="[0-9]{6,15}" class="underline-input w-75" >
+         <input type="tel" id="phone" name="phone"placeholder="Enter phone number"pattern="[0-9]{6,15}" class="underline-input w-75" >
         </div><br><br>
-        <button class="button2">
-          <a class="nav-link">Subscribe</a>
-        </button><br><br>
+        <button class="button2" type="submit">Subscribe</button><br><br>
       </form>
     </div>
   </div>
@@ -376,7 +372,25 @@ crossorigin="anonymous">
 });
   </script>
   <script>
-  function validatesub() {
+  function validateAndSubmitSubscribe(event) {
+  event.preventDefault();
+  if (!validatesub()) return false;
+  const form = document.getElementById("subscribeForm");
+  const payload = Object.fromEntries(new FormData(form).entries());
+  fetch(form.action, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  }).then(() => {
+    form.reset();
+    alert("Thanks for subscribing!");
+  }).catch(() => {
+    alert("Could not submit right now. Please try again.");
+  });
+  return false;
+}
+
+function validatesub() {
   var email = document.getElementById("email").value;
   var error = document.getElementById("errorsub");
 

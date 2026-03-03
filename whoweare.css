@@ -302,3 +302,16 @@ form
     background-color: rgb(74, 137, 179);
 }
 /* footer end */
+
+@media (max-width: 991px) {
+  .option { margin-left: 0; margin-top: 1rem; display: block !important; }
+  .navbar-nav .nav-link { padding: 0.5rem 0; }
+  form { margin: 2rem 1rem; }
+}
+
+@media (max-width: 767px) {
+  .container, .formbg { width: 100% !important; }
+  .abpara, .para { margin-left: 1rem !important; margin-right: 1rem !important; }
+  .banner-img, .ovimg, .banner1, .fourimg { width: 100% !important; margin: 0 !important; height: auto !important; }
+  .button4 { margin-left: 0 !important; }
+}
