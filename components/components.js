@@ -33,6 +33,38 @@ document.addEventListener("DOMContentLoaded", function () {
             const footerPlaceholder = document.getElementById("footer-placeholder");
             if (footerPlaceholder) {
                 footerPlaceholder.innerHTML = data;
+                setupSubscriptionForm();
             }
         });
 });
+
+function setupSubscriptionForm() {
+    const form = document.getElementById('subscribeForm');
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Use FormData for multipart/form-data support in FastAPI
+            const formData = new FormData(this);
+
+            fetch('http://localhost:8000/api/subscribe', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        alert('Thank you for subscribing!');
+                        form.reset();
+                    } else {
+                        alert('Submission failed: ' + (data.detail || 'Unknown error'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Could not connect to the server. Please check if the backend is running at http://localhost:8000');
+                });
+        });
+    }
+}
+

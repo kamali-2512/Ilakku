@@ -47,28 +47,83 @@
         </p>
       </div>
       <!-- form start -->
-      <div class="formbg p-5 rounded"><br><br>
-        <h1 class="formtitle mx-5">Donate & Support</h1><br>
-        <p class="mx-5 formpara">Scan the QR code below or click the button to donate directly via UPI or Card. We
-          appreciate your generosity!</p><br>
+      <div class="formbg px-4 py-5 rounded shadow-lg mx-auto" style="margin-top: 50px;"><br>
+        <h1 class="formtitle text-center" style="margin-left:0;">Donate & Support</h1><br>
+        <p class="text-center formpara px-3" style="margin-left:0; margin-right:0;">Scan the QR code below or fill the
+          details below to contribute directly. We appreciate your generosity!</p><br>
 
         <div class="text-center my-4">
-          <!-- TODO: Insert actual UPI QR Code Image Here -->
           <div class="border d-inline-block p-4 bg-white rounded shadow-sm">
             <h4 class="text-dark mb-3">Scan to Donate (UPI)</h4>
-            <img src="img/placeholder-qr.png" alt="UPI QR Code" width="200" height="200"
-              style="border:1px solid #ddd; padding: 10px;">
-            <p class="mt-3 text-muted">UPI ID: ilakku.ngo@upi</p>
+            <!-- QR Code Placeholder -->
+            <img src="img/placeholder-qr.png" alt="UPI QR Code" width="220" height="220"
+              style="border:1px solid #ddd; padding: 10px; background: #fff;">
+            <p class="mt-3 text-muted"><b>UPI ID:</b> ilakku.ngo@upi</p>
           </div>
         </div>
 
-        <div class="text-center my-4">
-          <h5 class="text-dark my-3">- OR -</h5>
-          <!-- Placeholder for Payment Button Snippet -->
-          <button class="dbutton rounded-pill px-5 py-2"
-            onclick="alert('Payment Gateway Integration Pending. Please use the UPI QR code above.')">Donate via Card /
-            NetBanking</button>
+        <div class="my-5 px-3">
+          <form id="donationForm" class="bg-white p-4 shadow-sm rounded text-dark">
+            <h5 class="mb-4 text-center font-weight-bold">Donor Information</h5>
+            <div class="row g-3">
+              <div class="col-md-12 text-start">
+                <label class="form-label">Full Name</label>
+                <input type="text" id="donorName" name="name" class="form-control" placeholder="Enter your full name"
+                  required>
+              </div>
+              <div class="col-md-12 text-start">
+                <label class="form-label">Email Address</label>
+                <input type="email" id="donorEmail" name="email" class="form-control" placeholder="name@example.com"
+                  required>
+              </div>
+              <div class="col-md-12 text-start">
+                <label class="form-label">Contribution Amount (INR)</label>
+                <input type="number" id="donorAmount" name="amount" class="form-control" placeholder="1000" required
+                  min="1">
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <button type="submit" class="button2 w-100 py-3" style="margin-left:0; height:auto;">RECORD &
+                PROCEED</button>
+            </div>
+          </form>
         </div>
+
+        <script>
+          document.getElementById('donationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = {
+              name: document.getElementById('donorName').value,
+              email: document.getElementById('donorEmail').value,
+              amount: parseFloat(document.getElementById('donorAmount').value),
+              payment_method: 'Manual/UPI'
+            };
+
+            fetch('http://localhost:8000/api/donate', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData),
+            })
+              .then(response => response.json())
+              .then(data => {
+                if (data.status === 'success') {
+                  alert('Thank you! Please scan the QR code to complete your payment of ₹' + formData.amount);
+                  this.reset();
+                } else {
+                  alert('Error recording donation intent.');
+                }
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+                alert('Could not connect to the backend server. Please make sure it is running.');
+              });
+          });
+        </script>
+
+
         <br><br>
       </div>
       <!-- form end -->
