@@ -50,6 +50,32 @@ def init_db():
         )
     ''')
     
+    # Create volunteers table
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS volunteers (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            first_name TEXT NOT NULL,
+            last_name TEXT NOT NULL,
+            email TEXT NOT NULL,
+            phone TEXT,
+            address TEXT,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    
+    # Create interns table
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS interns (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            company TEXT,
+            contact_person TEXT NOT NULL,
+            email TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            social_links TEXT,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    
     conn.commit()
     conn.close()
 
@@ -68,6 +94,20 @@ class DonationRequest(BaseModel):
     email: str
     amount: float
     payment_method: Optional[str] = None
+
+class VolunteerRequest(BaseModel):
+    first_name: str
+    last_name: str
+    email: str
+    phone: Optional[str] = None
+    address: Optional[str] = None
+
+class InternRequest(BaseModel):
+    company: Optional[str] = None
+    contact_person: str
+    email: str
+    phone: str
+    social_links: Optional[str] = None
 
 @app.post("/api/subscribe")
 async def subscribe(
@@ -104,6 +144,37 @@ async def donate(request: DonationRequest):
         return {"status": "success", "message": "Donation record created", "amount": request.amount}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/volunteer")
+async def volunteer(request: VolunteerRequest):
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute('''
+            INSERT INTO volunteers (first_name, last_name, email, phone, address)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (request.first_name, request.last_name, request.email, request.phone, request.address))
+        conn.commit()
+        conn.close()
+        return {"status": "success", "message": "Volunteer application submitted"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/intern")
+async def intern(request: InternRequest):
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute('''
+            INSERT INTO interns (company, contact_person, email, phone, social_links)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (request.company, request.contact_person, request.email, request.phone, request.social_links))
+        conn.commit()
+        conn.close()
+        return {"status": "success", "message": "Internship application submitted"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.get("/")
 async def root():

@@ -1,0 +1,614 @@
+body
+{
+    overflow-x: hidden;
+}
+/* common */
+body
+{
+   overflow-x: hidden;
+   font-family: 'Times New Roman', Times, serif;
+}
+header h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+nav
+{
+    text-align: center;
+}
+
+nav a 
+{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover 
+{
+    background-color:rgba(245, 242, 242, 0.364) ;
+}
+
+.app
+{
+    position: fixed;
+    bottom:70px;
+    right:0px;
+    font-size: 40px;
+    color:azure;
+    background-color:#32CD32;
+    z-index: 1;
+}
+/* top bar start */
+.top
+{
+    background-color:rgb(58, 55, 55);
+    padding:6px 20px 6px 20px;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: +1;
+}
+/* top bar end */
+/* nav bar start */
+.bar
+{
+    z-index: 1;
+    position:sticky;
+    top:110px;
+    bottom:30px;
+    background-color: white;
+}
+.option
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.butt
+{
+    border:black;
+    border-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.button1
+{
+    background-color: white;
+    color: black;
+}
+.button1:hover
+{
+    background-color:rgb(58, 55, 55);
+    color: azure;
+}
+/* nav bar end */
+
+/* footer start */
+.footer
+{
+    background-color: black;
+}
+.foot1
+{
+    text-align: center;
+}
+.form1
+{
+    margin: 90px 150px 90px 150px;
+}
+.last
+{
+    margin-left: 40px;
+}
+.underline-input 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  width: 500px;
+}
+.underline-input1 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+}
+.underline-input2 
+{
+  border: none;              
+  border-bottom: 2px solid #000;
+  outline: none;             
+  font-size: 16px;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 40px;
+}
+.phone-code
+{
+    width: 114px;
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none; 
+    box-shadow: none;
+    background: transparent;
+}
+.button2
+{
+    background-color: black;
+    color: azure;
+    border-radius: 5px;
+    margin-left: 200px;
+    width: 200px;
+    height: 40px;
+}
+.button2:hover
+{
+    background-color: rgb(74, 137, 179);
+}
+/* footer end */
+/* 2nd services start */
+
+.shead
+{
+    font-size:40px;
+    font-weight:bolder;
+    font-style: italic;
+    color:rgb(235, 43, 43);
+}
+.to{
+    margin-top: -5px;
+}
+.apply{
+    color:rgb(235, 43, 43); 
+    font-size: 40px;
+}
+.apply1{
+    color:rgb(235, 43, 43);
+    margin-top: 100px;
+    font-size: 40px;
+}
+/*button aplly*/
+
+.apply-btn{
+    position: relative;
+    background: black;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    margin-left: 300px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+margin-top:-100px;
+    display: inline-block;
+    width: auto;          /* important */
+    max-width: fit-content;
+}
+
+/* hover effect */
+.apply-btn:hover{
+    left:0;
+    background:#2f5f45;
+}
+
+.were{
+    text-align: justify;
+    font-size: 20px;
+}
+.were0{
+    text-align: justify;
+    font-size: 20px;
+}
+.were1{
+    text-align: justify;
+    font-size: 20px;
+}
+.time{
+    margin-left:300px ;
+    font-size: 20px;
+}
+
+.shead1
+{
+    font-size:40px;
+    font-weight:bolder;
+    color:rgb(8, 65, 38);
+    margin-top:-27px;
+}
+.icons
+{
+    margin-top:40px;
+    margin-left:130px;
+}
+.icons4
+{
+    margin-top:40px;
+    margin-bottom:-20px;
+    margin-left:210px;
+}
+.wch
+{
+    width: 270px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    margin-left:25px;
+}
+.cards
+{
+    box-shadow: 0px 10px 20px 10px lightgrey;
+}
+
+
+
+.hero-section
+{
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+
+.hero-section:hover .icons
+{
+    background-color: white;
+    padding:5px 5px 5px 5px;
+}
+.hero-section:hover .icons4
+{
+    background-color: white;
+    padding:5px 5px 5px 5px;
+}
+.hero-section:hover .apara
+{
+    color: white;
+}
+.hero-section:hover .sna
+{
+    color: white;
+}
+.hero-section:hover .sna2
+{
+    color: white;
+}
+.hero-section:hover .sna3
+{
+    color: white;
+}
+.hero-section:hover .sna1
+{
+    color: white;
+}
+.wch2
+{
+    width: 450px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    margin-left:25px;
+}
+.wch1
+{
+    width: 500px;
+    text-align: justify; 
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    margin-left:25px;
+}
+.hero-section:hover .hero-bg
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .hero-bg1 
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .hero-bg2
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .hero-bg3 
+{
+    opacity: 0.8; 
+}
+.hero-section:hover .hero-bg4
+{
+    opacity: 0.8; 
+}
+.hero-content 
+{
+    position: relative;
+    z-index: 1;
+}
+/* 2nd services end */
+/*form1vol*/
+.get{
+    margin-left: 550px;
+}
+.vol{
+    width:700px;
+    margin:50px auto;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+.volunteer-form{
+    border:3px solid black;
+    padding:25px;
+    background:#f8eee0;
+}
+
+.rows{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.field{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.field.full{
+    flex:100%;
+}
+
+label{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+input{
+    border: none;              
+    border-bottom: 2px solid #000;
+    outline: none;             
+    font-size: 16px;
+    background:white;
+}
+
+.apply-btn1{
+    width:100%;
+    padding:12px;
+    background:black;
+    color:white;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.apply-btn1:hover{
+    background:#333;
+}
+/*form2 in*/
+.intern-section{
+    padding:40px;
+    background:#ddd6cd;
+}
+
+.intern-title{
+    font-family: Arial, sans-serif;
+    margin-bottom:15px;
+}
+
+.intern-box{
+    border:3px solid black;
+    padding:30px;
+    background:#dcd4ca;
+}
+
+.intern-row{
+    display:flex;
+    gap:25px;
+    margin-bottom:20px;
+}
+
+.intern-field{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.intern-full{
+    width:100%;
+}
+
+.intern-field label{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.intern-field input{
+    padding:16px;
+    border:none;
+    background:#e5e5e5;
+    border-bottom:2px solid #333;
+}
+
+.intern-btn{
+    width:100%;
+    padding:14px;
+    background:black;
+    color:white;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.intern-btn:hover{
+    background:#222;
+}
+/*form 3*/
+.container{
+    width:750px;
+    margin:50px auto;
+}
+
+.section-title{
+    margin-bottom:20px;
+}
+
+.donation-box{
+    border:3px solid black;
+    padding:30px;
+    background:#f8eee0;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+.subtitle{
+    margin-bottom:25px;
+    font-size:16px;
+}
+
+.label{
+    display:block;
+    margin-bottom:8px;
+    font-size:16px;
+}
+
+/* Frequency */
+
+.frequency{
+    display:flex;
+    margin-bottom:20px;
+}
+
+.freq-btn{
+    flex:1;
+    padding:12px;
+    border:1px solid black;
+    background:transparent;
+    cursor:pointer;
+}
+
+.freq-btn.active{
+    background:white;
+}
+
+/* Amount buttons */
+
+.amount{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.amt-btn{
+    flex:1;
+    padding:12px;
+    border:1px solid black;
+    background:transparent;
+    cursor:pointer;
+}
+
+.amt-btn.active{
+    background:white;
+}
+
+/* Donate button */
+
+.donate-btn{
+    width:100%;
+    padding:15px;
+    background:black;
+    color:white;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.donate-btn:hover{
+    background:#333;
+}
+
+/* counting start */
+.count
+{
+    position: relative;
+}
+.count img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.over 
+{
+    left: 0;
+    top:0;
+    bottom:500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 226, 160, 0.425); 
+    display: flex;
+    color: rgb(45, 58, 45);
+}
+
+.cnt
+{
+    margin-left:40px;
+    font-weight:500;
+    color:white;
+    filter: brightness(100%);
+}
+.plus
+{
+    font-weight:bold;
+}
+/* counting end */
+/* blog start */
+.tblog
+{
+    color:rgb(8, 65, 38);
+}
+.shadow 
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.imgs 
+{
+    width: 100%;
+    height: 100%;
+}
+.pblog
+{
+    color:rgba(94, 91, 91, 0.952);
+}
+.imgs img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit:fill; 
+}
+.cfblog
+{
+    background-color: white;
+}
+/* blog end */
