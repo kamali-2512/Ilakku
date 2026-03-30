@@ -13,6 +13,7 @@
   <!-- v5 icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="getinvolved.css">
+  <link rel="stylesheet" href="responsive.css">
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -246,9 +247,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-    
+
     // Volunteer Form Submit Handler
-    document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+    document.getElementById('volunteerForm').addEventListener('submit', function (e) {
       e.preventDefault();
       const formData = {
         first_name: this.first_name.value,
@@ -257,7 +258,7 @@
         phone: this.phone.value || null,
         address: this.address.value || null
       };
-      
+
       fetch('http://localhost:8000/api/volunteer', {
         method: 'POST',
         headers: {
@@ -265,23 +266,23 @@
         },
         body: JSON.stringify(formData)
       })
-      .then(response => response.json())
-      .then(data => {
-        if(data.status === 'success') {
-          alert('Thank you for volunteering!');
-          this.reset();
-        } else {
-          alert('Error: ' + data.detail);
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Could not connect to the server.');
-      });
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === 'success') {
+            alert('Thank you for volunteering!');
+            this.reset();
+          } else {
+            alert('Error: ' + data.detail);
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('Could not connect to the server.');
+        });
     });
 
     // Intern Form Submit Handler
-    document.getElementById('internForm').addEventListener('submit', function(e) {
+    document.getElementById('internForm').addEventListener('submit', function (e) {
       e.preventDefault();
       const formData = {
         company: this.company.value || null,
@@ -298,19 +299,19 @@
         },
         body: JSON.stringify(formData)
       })
-      .then(response => response.json())
-      .then(data => {
-        if(data.status === 'success') {
-          alert('Thank you! Your internship application has been submitted.');
-          this.reset();
-        } else {
-          alert('Error: ' + data.detail);
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Could not connect to the server.');
-      });
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === 'success') {
+            alert('Thank you! Your internship application has been submitted.');
+            this.reset();
+          } else {
+            alert('Error: ' + data.detail);
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('Could not connect to the server.');
+        });
     });
   </script>
   <!-- Load Components Script MUST be before closing body tag -->
