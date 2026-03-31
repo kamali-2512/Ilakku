@@ -127,13 +127,13 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 30px;
 }
 
-.otcard{
+/* .otcard{
     margin: 10 10 10 10;
     border-radius: 10px;
     border-color: black;
     
      
-}
+} */
 .otcardbody{
     background-color: rgb(223, 216, 197);
     justify-content: center;
@@ -145,11 +145,11 @@ background-color: rgb(225, 241, 194);
 
 
 }
-.trusteeimg{
+/* .trusteeimg{
     border-radius: 190px;
     height: 200px;
     margin-left: 15px;
-}
+} */
 /* contact start */
 .contact
 {
@@ -302,3 +302,35 @@ form
     padding: 10px;
 }
 /* nav bar end */
+.detail
+{
+    opacity: 0;
+    background-color:  rgb(225, 241, 194);
+}
+.otcbody:hover .detail
+{
+    opacity: 1;
+}
+.otcard{
+    margin-left: 100px;
+    border-radius: 10px;
+    border-color: black;
+    width: 300px;
+     
+}
+
+.trusteeimg{
+    border-radius: 190px;
+    height: 200px;
+    margin-left: 45px;
+}
+
+
+
+
+
+
+
+
+
+
